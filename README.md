@@ -1,3 +1,7 @@
+
+# it at least compiles now on the current android studio, but nothing more
+
+
 # Quadcopter
 Android application to control quadcopter Walkera QR W100S.
 
