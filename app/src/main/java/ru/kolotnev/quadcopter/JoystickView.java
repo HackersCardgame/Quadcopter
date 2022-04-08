@@ -4,7 +4,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.annotation.NonNull;
+//import android.support.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.HapticFeedbackConstants;
@@ -349,7 +350,8 @@ public class JoystickView extends View {
 	}
 
 	@Override
-	public boolean onTouchEvent(@NonNull MotionEvent event) {
+//	public boolean onTouchEvent(@NonNull MotionEvent event) {
+	public boolean onTouchEvent(MotionEvent event) {
 		final int action = event.getAction();
 		switch (action & MotionEvent.ACTION_MASK) {
 			case MotionEvent.ACTION_MOVE:

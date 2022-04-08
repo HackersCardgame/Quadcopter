@@ -13,8 +13,10 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.annotation.NonNull;
+import androidx.annotation.Nullable;
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.InputDevice;
 import android.view.KeyEvent;
@@ -437,7 +439,8 @@ public class MainActivity extends AppCompatActivity implements
 	}
 
 	@Override
-	public boolean dispatchKeyEvent(@NonNull KeyEvent event) {
+	//public boolean dispatchKeyEvent(@NonNull KeyEvent event) {
+	public boolean dispatchKeyEvent(KeyEvent event) {
 		return super.dispatchKeyEvent(event);
 	}
 

@@ -4,7 +4,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.annotation.NonNull;
+//import android.support.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -140,7 +141,8 @@ public class JoystickAngularView extends View implements Runnable {
 	}
 
 	@Override
-	public boolean onTouchEvent(@NonNull MotionEvent event) {
+//TODO GANZ SCHLECHT DAS EIFACH WEGZUNEHMEN	public boolean onTouchEvent(@NonNull MotionEvent event) {
+	public boolean onTouchEvent(MotionEvent event) {
 		xPosition = (int) event.getX();
 		yPosition = (int) event.getY();
 		double abs = Math.sqrt((xPosition - centerX) * (xPosition - centerX)
